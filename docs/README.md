@@ -1,8 +1,3 @@
----
-title: Getting Started
-description: Install and start using Globby for file pattern matching in PHP.
----
-
 Globby is a PHP library for file pattern matching using glob patterns, similar to how shells match files.
 
 ## Installation

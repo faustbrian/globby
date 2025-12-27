@@ -1,8 +1,3 @@
----
-title: Advanced Patterns
-description: Complex glob patterns and advanced matching techniques.
----
-
 Complex glob patterns and advanced matching techniques.
 
 ## Extended Glob Syntax

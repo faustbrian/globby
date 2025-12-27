@@ -1,8 +1,3 @@
----
-title: Gitignore Integration
-description: Respect .gitignore rules when matching files.
----
-
 Respect .gitignore rules when matching files.
 
 **Use case:** Finding files while automatically excluding everything in .gitignore, useful for code analysis, search, and deployment.

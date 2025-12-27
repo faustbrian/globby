@@ -1,8 +1,3 @@
----
-title: Filtering Options
-description: Filter glob results by various criteria.
----
-
 Filter glob results by various criteria.
 
 ## By File Type

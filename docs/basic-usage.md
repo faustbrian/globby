@@ -1,8 +1,3 @@
----
-title: Basic Usage
-description: Common glob patterns and everyday usage examples.
----
-
 Common glob patterns and everyday usage examples.
 
 ## Finding Files
