@@ -58,7 +58,7 @@ Globby::find('**/*', exclude: ['vendor/**']);
 
 ## Next Steps
 
-- [Basic Usage](/globby/basic-usage/) - Common patterns and examples
-- [Filtering Options](/globby/filtering-options/) - Filter results
-- [Gitignore Integration](/globby/gitignore-integration/) - Respect .gitignore
-- [Advanced Patterns](/globby/advanced-patterns/) - Complex matching
+- [Basic Usage](./basic-usage.md) - Common patterns and examples
+- [Filtering Options](./filtering-options.md) - Filter results
+- [Gitignore Integration](./gitignore-integration.md) - Respect .gitignore
+- [Advanced Patterns](./advanced-patterns.md) - Complex matching
