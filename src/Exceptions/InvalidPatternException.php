@@ -9,6 +9,9 @@
 
 namespace Cline\Globby\Exceptions;
 
+use Facade\IgnitionContracts\BaseSolution;
+use Facade\IgnitionContracts\ProvidesSolution;
+use Facade\IgnitionContracts\Solution;
 use InvalidArgumentException;
 
 /**
@@ -20,7 +23,7 @@ use InvalidArgumentException;
  *
  * @author Brian Faust <brian@cline.sh>
  */
-final class InvalidPatternException extends InvalidArgumentException implements GlobbyException
+final class InvalidPatternException extends InvalidArgumentException implements GlobbyException, ProvidesSolution
 {
     /**
      * Create an exception instance for an empty pattern.
@@ -34,5 +37,17 @@ final class InvalidPatternException extends InvalidArgumentException implements 
     public static function empty(): self
     {
         return new self('Glob pattern cannot be empty.');
+    }
+
+    public function getSolution(): Solution
+    {
+        /** @var BaseSolution $solution */
+        $solution = BaseSolution::create('Review package usage and configuration.');
+
+        return $solution
+            ->setSolutionDescription('Exception: '.$this->getMessage())
+            ->setDocumentationLinks([
+                'Package documentation' => 'https://github.com/cline/globby',
+            ]);
     }
 }
