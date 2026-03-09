@@ -21,10 +21,10 @@ composer require cline/globby
 
 ## Documentation
 
-- **[Basic Usage](cookbooks/basic-usage.md)** - Pattern matching fundamentals, multiple patterns, negation, and streaming
-- **[Filtering Options](cookbooks/filtering-options.md)** - Files vs directories, dotfiles, depth limiting, and path formatting
-- **[Gitignore Integration](cookbooks/gitignore-integration.md)** - Respecting .gitignore rules and custom ignore files
-- **[Advanced Patterns](cookbooks/advanced-patterns.md)** - Brace expansion, character classes, globstar, and escaping
+- **[Basic Usage](DOCS.md#doc-cookbooks-basic-usage)** - Pattern matching fundamentals, multiple patterns, negation, and streaming
+- **[Filtering Options](DOCS.md#doc-cookbooks-filtering-options)** - Files vs directories, dotfiles, depth limiting, and path formatting
+- **[Gitignore Integration](DOCS.md#doc-cookbooks-gitignore-integration)** - Respecting .gitignore rules and custom ignore files
+- **[Advanced Patterns](DOCS.md#doc-cookbooks-advanced-patterns)** - Brace expansion, character classes, globstar, and escaping
 
 ## Supported Options
 

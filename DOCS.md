@@ -1,14 +1,16 @@
 ## Table of Contents
 
-1. Basic Usage (`cookbooks/basic-usage.md`)
-2. Filtering Options (`cookbooks/filtering-options.md`)
-3. Gitignore Integration (`cookbooks/gitignore-integration.md`)
-4. Advanced Patterns (`cookbooks/advanced-patterns.md`)
-5. Overview (`docs/README.md`)
-6. Advanced Patterns (`docs/advanced-patterns.md`)
-7. Basic Usage (`docs/basic-usage.md`)
-8. Filtering Options (`docs/filtering-options.md`)
-9. Gitignore Integration (`docs/gitignore-integration.md`)
+1. [Basic Usage](#doc-cookbooks-basic-usage) (`cookbooks/basic-usage.md`)
+2. [Filtering Options](#doc-cookbooks-filtering-options) (`cookbooks/filtering-options.md`)
+3. [Gitignore Integration](#doc-cookbooks-gitignore-integration) (`cookbooks/gitignore-integration.md`)
+4. [Advanced Patterns](#doc-cookbooks-advanced-patterns) (`cookbooks/advanced-patterns.md`)
+5. [Overview](#doc-docs-readme) (`docs/README.md`)
+6. [Advanced Patterns](#doc-docs-advanced-patterns) (`docs/advanced-patterns.md`)
+7. [Basic Usage](#doc-docs-basic-usage) (`docs/basic-usage.md`)
+8. [Filtering Options](#doc-docs-filtering-options) (`docs/filtering-options.md`)
+9. [Gitignore Integration](#doc-docs-gitignore-integration) (`docs/gitignore-integration.md`)
+<a id="doc-cookbooks-basic-usage"></a>
+
 # Basic Usage
 
 This cookbook covers the fundamental operations of Globby for file matching.
@@ -117,6 +119,8 @@ foreach ($generator as $file) {
     echo $file . PHP_EOL;
 }
 ```
+
+<a id="doc-cookbooks-filtering-options"></a>
 
 # Filtering Options
 
@@ -272,6 +276,8 @@ Suppress errors from inaccessible directories:
 $files = Globby::glob('**/*', ['suppressErrors' => true]);
 ```
 
+<a id="doc-cookbooks-gitignore-integration"></a>
+
 # Gitignore Integration
 
 This cookbook covers how to use Globby's gitignore integration for respecting `.gitignore` rules.
@@ -409,6 +415,8 @@ $files = Globby::glob('**/*.log', [
 ]);
 // Returns: ['src/debug.log']
 ```
+
+<a id="doc-cookbooks-advanced-patterns"></a>
 
 # Advanced Patterns
 
@@ -601,6 +609,8 @@ $configs = Globby::glob([
 ]);
 ```
 
+<a id="doc-docs-readme"></a>
+
 Globby is a PHP library for file pattern matching using glob patterns, similar to how shells match files.
 
 ## Installation
@@ -656,10 +666,12 @@ Globby::find('**/*', exclude: ['vendor/**']);
 
 ## Next Steps
 
-- [Basic Usage](./basic-usage.md) - Common patterns and examples
-- [Filtering Options](./filtering-options.md) - Filter results
-- [Gitignore Integration](./gitignore-integration.md) - Respect .gitignore
-- [Advanced Patterns](./advanced-patterns.md) - Complex matching
+- [Basic Usage](#doc-docs-basic-usage) - Common patterns and examples
+- [Filtering Options](#doc-docs-filtering-options) - Filter results
+- [Gitignore Integration](#doc-docs-gitignore-integration) - Respect .gitignore
+- [Advanced Patterns](#doc-docs-advanced-patterns) - Complex matching
+
+<a id="doc-docs-advanced-patterns"></a>
 
 Complex glob patterns and advanced matching techniques.
 
@@ -778,6 +790,8 @@ $files = Globby::find('src/**/*.php')
     ->filter(fn($f) => preg_match('/^[A-Z]/', $f->getFilename()));
 ```
 
+<a id="doc-docs-basic-usage"></a>
+
 Common glob patterns and everyday usage examples.
 
 ## Finding Files
@@ -881,6 +895,8 @@ $files = Globby::find('**/*.php', [
     'onlyDirectories' => false,       // Only directories
 ]);
 ```
+
+<a id="doc-docs-filtering-options"></a>
 
 Filter glob results by various criteria.
 
@@ -986,6 +1002,8 @@ $sorted = $files->sortByMTime();
 // Custom sort
 $sorted = $files->sort(fn($a, $b) => $a->getSize() <=> $b->getSize());
 ```
+
+<a id="doc-docs-gitignore-integration"></a>
 
 Respect .gitignore rules when matching files.
 
