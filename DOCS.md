@@ -1,14 +1,14 @@
 ## Table of Contents
 
-1. [Basic Usage](#doc-cookbooks-basic-usage) (`cookbooks/basic-usage.md`)
-2. [Filtering Options](#doc-cookbooks-filtering-options) (`cookbooks/filtering-options.md`)
-3. [Gitignore Integration](#doc-cookbooks-gitignore-integration) (`cookbooks/gitignore-integration.md`)
-4. [Advanced Patterns](#doc-cookbooks-advanced-patterns) (`cookbooks/advanced-patterns.md`)
-5. [Overview](#doc-docs-readme) (`docs/README.md`)
-6. [Advanced Patterns](#doc-docs-advanced-patterns) (`docs/advanced-patterns.md`)
-7. [Basic Usage](#doc-docs-basic-usage) (`docs/basic-usage.md`)
-8. [Filtering Options](#doc-docs-filtering-options) (`docs/filtering-options.md`)
-9. [Gitignore Integration](#doc-docs-gitignore-integration) (`docs/gitignore-integration.md`)
+1. [Basic Usage](#doc-cookbooks-basic-usage)
+2. [Filtering Options](#doc-cookbooks-filtering-options)
+3. [Gitignore Integration](#doc-cookbooks-gitignore-integration)
+4. [Advanced Patterns](#doc-cookbooks-advanced-patterns)
+5. [Overview](#doc-docs-readme)
+6. [Advanced Patterns](#doc-docs-advanced-patterns)
+7. [Basic Usage](#doc-docs-basic-usage)
+8. [Filtering Options](#doc-docs-filtering-options)
+9. [Gitignore Integration](#doc-docs-gitignore-integration)
 <a id="doc-cookbooks-basic-usage"></a>
 
 # Basic Usage
